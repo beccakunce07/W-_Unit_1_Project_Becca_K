@@ -1,11 +1,13 @@
 import './App.css'
-import { Routes, Route, Link} from "react-router-dom";
+import { Routes, Route, BrowserRouter} from "react-router-dom";
 import Navbar from './components/navBar';
+// import {FaHome, FaUser, FaEnvelope}
 // // import pages
 // import './'
 // import 'pages/CreateYourOwnPage.jsx'
 // import 'pages/HomePage.jsx'
-// import 'pages/TempCheckPage.jsx'
+import TempCheckPage from './pages/TempCheckPage.jsx';
+import PageHeader from './components/header.jsx';
 
 // //import components
 // import 'components/footer.jsx'
@@ -17,17 +19,9 @@ function App() {
   
   return (
     <>
-    <div>
-   <Routes>
-      <Route path = 'AboutPage' element ={<h1>About Page</h1>}></Route>
-      <Route path = 'HomePage' element ={<h1>Home Page</h1>}></Route>
-      <Route path = 'TempCheckPage' element ={<h1>Temp Check Page</h1>}></Route>
-      <Route path = 'CreateYourOwnPage' element ={<h1>Create Your Own SLB Page</h1>}></Route>      
-    </Routes>
-    </div>
+    <PageHeader></PageHeader>
     <h1>Hello I am here</h1>
-   
-      
+
     </>
   )
 }

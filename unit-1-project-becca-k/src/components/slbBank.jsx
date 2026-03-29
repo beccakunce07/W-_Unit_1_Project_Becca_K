@@ -1,12 +1,12 @@
-const selfLoveBombBank = 
+const slbBank = 
 [
-    {message: "Money flows to me through aligned, meaningful work.", key: "money"},
-    {message: "I am capable of creating wealth without compromising my values.", key: "money"},
-    {message: "I trust myself to make wise, grounded financial decisions.", key: "money"},
-    {message: "I am open to receiving more than I have ever allowed before.", key: "money"},
-    {message: "My skills and ideas are valuable—and they are rewarded accordingly.", key: "money"},
-    {message: "I release scarcity and choose to see opportunity.", key: "money"},
-    {message: "I can build a life that is both financially abundant and deeply fulfilling.", key: "money"},
+    {message: "Money flows to me through aligned, meaningful work.", key: "finances"},
+    {message: "I am capable of creating wealth without compromising my values.", key: "finances"},
+    {message: "I trust myself to make wise, grounded financial decisions.", key: "finances"},
+    {message: "I am open to receiving more than I have ever allowed before.", key: "finances"},
+    {message: "My skills and ideas are valuable—and they are rewarded accordingly.", key: "finances"},
+    {message: "I release scarcity and choose to see opportunity.", key: "finances"},
+    {message: "I can build a life that is both financially abundant and deeply fulfilling.", key: "finances"},
     {message: "My body is intelligent, responsive, and worthy of care.", key: "body"},
     {message: "I listen to my body and honor what it needs.", key: "body"},
     {message: "I am allowed to feel at home in myself.", key: "body"},
@@ -32,7 +32,7 @@ const selfLoveBombBank =
     {message: "I create impact simply by being fully myself.", key: "purpose"},
 ]
 
- export default selfLoveBombBank;
+ export default slbBank;
  
 
  

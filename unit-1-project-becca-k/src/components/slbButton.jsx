@@ -1,14 +1,22 @@
-import selfLoveBombBank from "./slb_bank";
+import { useState } from "react";
+import SlbBank from "./slb_bank";
 
-const slbButton = () => {
-<><button id="slbButton">Click for a Self Love Bomb</button><p id="displayArea"></p></>
+function SlbButton () {
+  const [message, setMessage] = useState("");
 
-const button = document.getElementById('slbButton');
-const display = document.getElementById('displayArea');
+  const handleClick = () => {
+    const randomIndex = Math.floor(Math.random() * SlbBank.length);
+    setMessage(SlbBank[randomIndex]);
+  };
 
-button.addEventListener('click', () => {
-    const randomIndex = Math.floor(Math.random() * selfLoveBombBank.length);
-    display.textContent = selfLoveBombBank.message[randomIndex];
-});
-}
-export default slbButton
+  return (
+    <>
+      <button onClick={handleClick}>
+        Click for a Self Love Bomb
+      </button>
+      <h1>{message}</h1>
+    </>
+  );
+};
+
+export default SlbButton;

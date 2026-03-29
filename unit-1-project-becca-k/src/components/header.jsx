@@ -1,18 +1,17 @@
 import React from 'react';
 import NavBar from './navBar';
-import logo from '/assets/SelfLoveBombWithText.png'
+// import logo from '/assets/SelfLoveBombWithText.png'
 
-function Header () {
+function PageHeader () {
     return (
         <header className="header">
-            <div className="logo">Self Love Bombs</div>
-            <logo></logo>
-            <NavBar>
-            </NavBar>
+            {/* <div className="logo">return <img src={logo} alt="Project Logo" />;</div> */}
+            {/* <NavBar>
+            </NavBar> */}
         </header>
     )
 }
 
-export default Header;
+export default PageHeader;
 
 //should have logo
