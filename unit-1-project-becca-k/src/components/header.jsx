@@ -6,8 +6,8 @@ function PageHeader () {
     return (
         <header className="header">
             {/* <div className="logo">return <img src={logo} alt="Project Logo" />;</div> */}
-            {/* <NavBar>
-            </NavBar> */}
+            <NavBar>
+            </NavBar>
         </header>
     )
 }
