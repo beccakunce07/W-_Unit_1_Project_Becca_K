@@ -1,22 +1,31 @@
-.header {
+.pageHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #11B27C;
-  color: white;
+  background-color: #ECF6E8;
+  color: white; 
 }
 
-.header nav ul {
+.pageHeader-outline {
+  color: #11B27C;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+.pageHeader nav ul {
   display: flex;
   list-style: none;
   gap: 20px;
+  align-items: center;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    
+
 
 }
 /* Global Styles */
@@ -30,14 +39,16 @@ body {
 
 /* Heading Styles */
 h1 {
-    color: #2c3e50;
+    color: #D50000;
     text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h3 {
     color: #2c3e50;
     text-align: left;
 }
+
 
 /* Class Selector */
 .content-box {
@@ -62,4 +73,22 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.button1 {
+    background-color: #11B27C;
+    border: 2px;
+    color: #ECF6E8;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.button2 {
+    background-color: #11B27C;
+    border: 2px;
+    color: #ECF6E8;
+    padding: 10px;
+    cursor: pointer;
+    
 }

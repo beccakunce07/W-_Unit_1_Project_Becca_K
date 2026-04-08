@@ -13,7 +13,6 @@ function HomePage () {
         <h1>Home</h1>
         <p>Welcome to Self Love Bombs</p>
         <SlbButton></SlbButton>
-
         </div>
 
     )

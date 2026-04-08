@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter, Link} from "react-router-dom";
 import '../index.css';
-// import TempCheckPage from '../pages/TempCheckPage';
+import TempCheckPage from '../pages/TempCheckPage';
+import AboutPage from '../pages/aboutPage';
 
 const Navbar = () => {
-  
   return (
   <div>
     <BrowserRouter>
@@ -17,19 +17,14 @@ const Navbar = () => {
         <li><Link to="/CreateYourOwnPage">Create Your Own</Link></li>
       </ul>
       </nav>
-       <Routes>
-      <Route path = 'AboutPage' element ={<h1>About Page</h1>}></Route>
-      <Route path = 'HomePage' element ={<h1>Home Page</h1>}></Route>
-      <Route path = 'TempCheckPage' element ={<h1>Temp Check Page</h1>}></Route>
-      <Route path = 'CreateYourOwnPage' element ={<h1>Create Your Own SLB Page</h1>}></Route>      
+      <Routes>
+      <Route path = '/AboutPage' element ={<h1>About Page</h1>}></Route>
+      <Route path = '/HomePage' element ={<h1>Home Page</h1>}></Route>
+      <Route path = '/TempCheckPage' element ={<TempCheckPage/>}></Route>
+      <Route path = '/CreateYourOwnPage' element ={<h1>Create Your Own SLB Page</h1>}></Route>      
     </Routes>
-      </BrowserRouter>
-    
-    
-    <p>hey</p>
-    </div>
-    
-    
+    </BrowserRouter>
+    </div>    
   );
 };
 

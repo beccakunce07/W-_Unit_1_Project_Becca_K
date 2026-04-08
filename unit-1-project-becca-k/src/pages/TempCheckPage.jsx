@@ -1,31 +1,44 @@
-import React from 'react';
+// import { useState} from 'react;'
 // import feelingsWheel from './assets/EmotionsWheel.png'; 
 // import { useState } from 'react'
 //need to add event handlers to store data here and want to connect them with the messages.
-function TempCheckPage () {
-  // const [key, getMessage] = useState("")
+
+// const handleClick = (value) => {
+  //   setClickedKey(value);
+  // }
+
       /* <img src={feelingsWheel} alt="A circle with all the colors of the rainbow with the range of emotions transcribed over it" />; */
+import React, { useState } from 'react';
+
+function TempCheckPage () {
+  
+
+  const [key, setKey] = useState("");
+  const [feeling, setFeeling] = useState("");
 
   return (
     <div>
-    <>
+  
     <h1> Today I am feeling...</h1>
-    <><button id = "sad">Sad</button></>
-    <><button id = "angry">Angry</button></>
-    <><button id = "depressed">Depressed</button></>
-    <><button id = "overwhelmed">Overwhelmed</button></>
-    <><button id = "happy">Happy</button></>
-    <><button id = "excited">Excited</button></>
-    <><button id = "neutral">Neutral</button></>
+    <><button class = "button1" onClick={() => setFeeling("sad")}>Sad</button></>
+    <><button class = "button1" onClick={() => setFeeling("angry")}>Angry</button></>
+    <><button class = "button1" onClick={() => setFeeling("depressed")}>Depressed</button></>
+    <><button class = "button1" onClick={() => setFeeling("overwhelmed")}>Overwhelmed</button></>
+    <><button class = "button1" onClick={() => setFeeling("happy")}>Happy</button></>
+    <><button class = "button1" onClick={() => setFeeling("excited")}>Excited</button></>
+    <><button class = "button1" onClick={() => setFeeling("neutral")}>Neutral</button></>
+    <p> Current Feeling: {feeling}</p>
 
     <h1> About my...</h1>
 
-    <><button id = "finances">Finances</button></> 
-    <><button id = "body">Body</button></>
-    <><button id = "relationship">Relationship</button></>
-    <><button id = "purpose">Purpose</button></>
-    </>
+    <><button class = "button2" onClick={() => setKey("finances")}>Finances</button></>
+    <><button class = "button2" onClick={() => setKey("body")}>Body</button></>
+    <><button class = "button2" onClick={() => setKey("relationship")}>Relationship</button></>
+    <><button class = "button2" onClick={() => setKey("purpose")}>Purpose</button></>
 
+
+    <p>Current Key: {key}</p>
+    
     </div>
 
   
@@ -33,6 +46,8 @@ function TempCheckPage () {
 }
 
 export default TempCheckPage
+
+
 
 
 // function MyComponent() {

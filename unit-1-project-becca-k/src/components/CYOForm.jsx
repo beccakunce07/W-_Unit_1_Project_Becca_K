@@ -1,4 +1,5 @@
 function CYOForm () {
+    
 <form id="createYourOwn">
   <label for="message">Create Your Own Self Love Bomb:</label>
   <input type="text" id="message" placeholder="Enter your self love bomb here" minlength="2" pattern="[A-Za-z]" rows="6" cols="36" required></input>
