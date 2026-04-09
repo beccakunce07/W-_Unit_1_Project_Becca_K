@@ -1,25 +1,35 @@
-import './App.css'
-import PageFooter from './components/footer.jsx';
-// import {FaHome, FaUser, FaEnvelope}
-// // import pages
-// import './'
-// import 'pages/CreateYourOwnPage.jsx'
-// import 'pages/HomePage.jsx'
-import PageHeader from './components/PageHeader.jsx';
-
-// //import components
-// import 'components/footer.jsx'
-// import 'components/header.jsx'
-// import 'components/navBar.jsx'
-// import 'components/slb_button.jsx'
+import React from 'react';
+import { Routes, Route, Link} from "react-router-dom";
+// import '../index.css';
+import AboutPage from './pages/aboutPage.jsx';
+import HomePage from './pages/homePage.jsx';
+import TempCheckPage from './pages/TempCheckPage.jsx';
+import CreateYourOwnSLBPage from './pages/CreateYourOwnPage.jsx';
 
 function App() {
   
   return (
     <>
-    <PageHeader></PageHeader>
-    <h1>Self Love Bombs</h1>
-    <PageFooter></PageFooter>
+    <main>  
+         <nav className="navbar">
+            <ul className="nav-links">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/AboutPage">About</Link></li>
+              <li><Link to="/TempCheckPage">Temp Check</Link></li>
+              <li><Link to="/CreateYourOwnPage">Create Your Own</Link></li>
+            </ul>
+            </nav>
+      <Routes>
+      <Route path = '/AboutPage' element ={<AboutPage></AboutPage>}></Route>
+      <Route path = '/HomePage' element ={<HomePage></HomePage>}></Route>
+      <Route path = '/TempCheckPage' element ={<TempCheckPage/>}></Route>
+      <Route path = '/CreateYourOwnPage' element ={<CreateYourOwnSLBPage></CreateYourOwnSLBPage>}></Route>      
+      </Routes>
+     
+    </main>
+   
+    
+    
     </>
   )
 }

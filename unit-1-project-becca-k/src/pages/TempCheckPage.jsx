@@ -19,21 +19,21 @@ function TempCheckPage () {
          */}
 
     <h1> Today I am feeling...</h1>
-    <><button class = "button1" onClick={() => setFeeling("sad")}>Sad</button></>
-    <><button class = "button1" onClick={() => setFeeling("angry")}>Angry</button></>
-    <><button class = "button1" onClick={() => setFeeling("depressed")}>Depressed</button></>
-    <><button class = "button1" onClick={() => setFeeling("overwhelmed")}>Overwhelmed</button></>
-    <><button class = "button1" onClick={() => setFeeling("happy")}>Happy</button></>
-    <><button class = "button1" onClick={() => setFeeling("excited")}>Excited</button></>
-    <><button class = "button1" onClick={() => setFeeling("neutral")}>Neutral</button></>
+    <><button className = "button1" onClick={() => setFeeling("sad")}>Sad</button></>
+    <><button className = "button1" onClick={() => setFeeling("angry")}>Angry</button></>
+    <><button className = "button1" onClick={() => setFeeling("depressed")}>Depressed</button></>
+    <><button className = "button1" onClick={() => setFeeling("overwhelmed")}>Overwhelmed</button></>
+    <><button className = "button1" onClick={() => setFeeling("happy")}>Happy</button></>
+    <><button className = "button1" onClick={() => setFeeling("excited")}>Excited</button></>
+    <><button className = "button1" onClick={() => setFeeling("neutral")}>Neutral</button></>
     <p> Current Feeling: {feeling}</p>
 
     <h1> About my...</h1>
 
-    <><button class = "button2" onClick={() => setKey("finances")}>Finances</button></>
-    <><button class = "button2" onClick={() => setKey("body")}>Body</button></>
-    <><button class = "button2" onClick={() => setKey("relationship")}>Relationship</button></>
-    <><button class = "button2" onClick={() => setKey("purpose")}>Purpose</button></>
+    <><button className = "button2" onClick={() => setKey("finances")}>Finances</button></>
+    <><button className = "button2" onClick={() => setKey("body")}>Body</button></>
+    <><button className = "button2" onClick={() => setKey("relationship")}>Relationship</button></>
+    <><button className = "button2" onClick={() => setKey("purpose")}>Purpose</button></>
 
     <p>Current Key: {key}</p>
     
@@ -45,7 +45,7 @@ function TempCheckPage () {
     
     </div>
 
-    <div class = "messageDisplaySection">
+    <div className = "messageDisplaySection">
       <SpecificSlbButton category={key}></SpecificSlbButton>
     </div>
 
