@@ -5,20 +5,14 @@ import AboutPage from './pages/aboutPage.jsx';
 import HomePage from './pages/homePage.jsx';
 import TempCheckPage from './pages/TempCheckPage.jsx';
 import CreateYourOwnSLBPage from './pages/CreateYourOwnPage.jsx';
+import Navbar from './components/navBar.jsx';
 
 function App() {
   
   return (
     <>
-    <main>  
-         <nav className="navbar">
-            <ul className="nav-links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/AboutPage">About</Link></li>
-              <li><Link to="/TempCheckPage">Temp Check</Link></li>
-              <li><Link to="/CreateYourOwnPage">Create Your Own</Link></li>
-            </ul>
-            </nav>
+
+    <Navbar></Navbar>
       <Routes>
       <Route path = '/AboutPage' element ={<AboutPage></AboutPage>}></Route>
       <Route path = '/HomePage' element ={<HomePage></HomePage>}></Route>
@@ -26,7 +20,7 @@ function App() {
       <Route path = '/CreateYourOwnPage' element ={<CreateYourOwnSLBPage></CreateYourOwnSLBPage>}></Route>      
       </Routes>
      
-    </main>
+    
    
     
     
