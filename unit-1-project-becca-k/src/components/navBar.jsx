@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter, Link} from "react-router-dom";
 import '../index.css';
 import TempCheckPage from '../pages/TempCheckPage';
 import AboutPage from '../pages/aboutPage';
+import CreateYourOwnSLBPage from '../pages/CreateYourOwnPage';
 
 const Navbar = () => {
   return (
@@ -21,7 +22,7 @@ const Navbar = () => {
       <Route path = '/AboutPage' element ={<h1>About Page</h1>}></Route>
       <Route path = '/HomePage' element ={<h1>Home Page</h1>}></Route>
       <Route path = '/TempCheckPage' element ={<TempCheckPage/>}></Route>
-      <Route path = '/CreateYourOwnPage' element ={<h1>Create Your Own SLB Page</h1>}></Route>      
+      <Route path = '/CreateYourOwnPage' element ={<CreateYourOwnSLBPage></CreateYourOwnSLBPage>}></Route>      
     </Routes>
     </BrowserRouter>
     </div>    

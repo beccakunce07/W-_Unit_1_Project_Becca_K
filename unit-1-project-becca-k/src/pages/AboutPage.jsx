@@ -6,10 +6,10 @@ function AboutPage() {
     <>
       <PageHeader />
       <h1>About Self Love Bombs</h1>
-      <p>INSERT COPY HERE</p>
+      <p>COPY HERE</p>
       <Footer />
     </>
   );
 }
 
-export default AboutPage;
+export default AboutPage

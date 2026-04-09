@@ -1,4 +1,5 @@
 import './App.css'
+import PageFooter from './components/footer.jsx';
 // import {FaHome, FaUser, FaEnvelope}
 // // import pages
 // import './'
@@ -17,7 +18,8 @@ function App() {
   return (
     <>
     <PageHeader></PageHeader>
-    <h1>Hello I am here</h1>
+    <h1>Self Love Bombs</h1>
+    <PageFooter></PageFooter>
     </>
   )
 }

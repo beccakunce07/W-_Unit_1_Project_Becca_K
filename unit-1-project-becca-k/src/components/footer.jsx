@@ -1,16 +1,21 @@
 import React from 'react'
+import logo from  '../assets/SelfLoveBomb.png'
 
 
 function PageFooter() {
     return (
         <footer>
             <div>
+                 <img 
+                src = {logo}
+                style = {{width:'100px', height: 'auto', align: 'center'}}
+                /><p> &copy; 2026 Becca Kunce All Rights Reserved</p>
                 
-                <h3> &copy; 2026 Becca Kunce All Rights Reserved</h3>
             </div>
         </footer>
     )
 }
 
 export default PageFooter;
+
 

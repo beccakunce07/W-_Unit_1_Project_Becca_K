@@ -1,24 +1,23 @@
-// import { useState} from 'react;'
-// import feelingsWheel from './assets/EmotionsWheel.png'; 
-// import { useState } from 'react'
-//need to add event handlers to store data here and want to connect them with the messages.
-
-// const handleClick = (value) => {
-  //   setClickedKey(value);
-  // }
 
       /* <img src={feelingsWheel} alt="A circle with all the colors of the rainbow with the range of emotions transcribed over it" />; */
 import React, { useState } from 'react';
+// import logoWithWords from '../assets/SelfLoveBombwithText.png'
+import emotionsWheel from '../assets/EmotionsWheel.png'
+import SpecificSlbButton from '../components/specificSlbButton';
 
 function TempCheckPage () {
   
-
   const [key, setKey] = useState("");
   const [feeling, setFeeling] = useState("");
 
   return (
+    <>
     <div>
-  
+        {/* <img class = "logo1"> src={logoWithWords} </img> 
+        
+        style = {{width:'900px', height: 'auto', align: 'center'}}
+         */}
+
     <h1> Today I am feeling...</h1>
     <><button class = "button1" onClick={() => setFeeling("sad")}>Sad</button></>
     <><button class = "button1" onClick={() => setFeeling("angry")}>Angry</button></>
@@ -36,10 +35,25 @@ function TempCheckPage () {
     <><button class = "button2" onClick={() => setKey("relationship")}>Relationship</button></>
     <><button class = "button2" onClick={() => setKey("purpose")}>Purpose</button></>
 
-
     <p>Current Key: {key}</p>
     
+
+    <img 
+        src={emotionsWheel}
+        style = {{width:'600px', height: 'auto', align: 'center'}}
+        alt="A list of emotions superimposed onto the color wheel'" />
+    
     </div>
+
+    <div class = "messageDisplaySection">
+      <SpecificSlbButton category={key}></SpecificSlbButton>
+    </div>
+
+    
+</>
+    
+
+    
 
   
   )

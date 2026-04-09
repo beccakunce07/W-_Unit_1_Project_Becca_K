@@ -1,12 +1,12 @@
 import { useState } from "react";
-import SlbBank from "./slb_bank";
+import SlbBank from "./slbBank";
 
 function SlbButton () {
   const [message, setMessage] = useState("");
 
   const handleClick = () => {
     const randomIndex = Math.floor(Math.random() * SlbBank.length);
-    setMessage(SlbBank[randomIndex]);
+    setMessage(SlbBank[randomIndex].message);
   };
 
   return (
