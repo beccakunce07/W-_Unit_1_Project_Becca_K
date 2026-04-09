@@ -1,3 +1,11 @@
+/* .pageHeader {
+
+}
+
+.pageFooter {
+
+} */
+
 .appHeader {
   display: flex;
   justify-content: space-between;
@@ -7,12 +15,8 @@
   color: #D50000; 
 }
 
-.new-background {
-  background-image: url('path/to/image.jpg');
-  background-size: cover;
-}
 
-.pageHeader-outline {
+.appHeader-outline {
   outline-color: #11B27C;
   text-shadow: 
     -1px -1px 0 #000,  
@@ -27,28 +31,36 @@
   align-items: center;
 }
 
+.navbar {
+    display: flex;
+    list-style: none;
+
+}
 
 .logo1 {
     display: flex;
     align-items: center;
-    width: '900';
+    width: '300';
     height: 'auto';
-    alt: 'An outline of a heart with lit fuses on the ends. The words 'Self Love Bombs' in soft font. Sub text "Because love only needs a spark."'
+}
 
+.logoFooter {
+    width: '150';
+    height: 'auto';
+    align-items: center;
 
 }
 
-.CYO
-/* Global Styles */
+
 body {
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
     color: #333;
-}
+} */
 
-/* Heading Styles */
+
 h1 {
     color: #D50000;
     text-align: center;
@@ -83,7 +95,13 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Button Styles */
+
+.buttonGroup {
+    display: flex;
+  justify-content: center; 
+  align-items: center;     
+    
+}
 .button1 {
     background-color: #11B27C;
     border: 6px;
@@ -109,4 +127,4 @@ a:hover {
     padding: 10px;
     cursor: pointer;
     
-}
+} 

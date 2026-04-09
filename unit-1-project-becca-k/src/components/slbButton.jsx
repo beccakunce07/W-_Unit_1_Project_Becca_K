@@ -11,7 +11,7 @@ function SlbButton () {
 
   return (
     <>
-      <button onClick={handleClick}>
+      <button className = "button3" onClick={handleClick}>
         Click for a Self Love Bomb
       </button>
       <h1>{message}</h1>

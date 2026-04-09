@@ -5,7 +5,7 @@ function SpecificSlbButton ({category}) {
   const [message, setMessage] = useState ("");
 
   const handleClick = () => {
-    const filteredArray = SlbBank.filter((index) => index.key === category);
+    const filteredArray = SlbBank.filter((index) => index.key.trim().toLowerCase() === category.trim().toLowerCase());
     const randomIndex = Math.floor(Math.random() * filteredArray.length);
 
     setMessage(filteredArray[randomIndex].message);
@@ -13,7 +13,7 @@ function SpecificSlbButton ({category}) {
 
   return (
     <>
-      <button onClick={handleClick}>
+      <button className = "button3" onClick={handleClick}>
         Click for a Self Love Bomb
       </button>
       <h1>{message}</h1>

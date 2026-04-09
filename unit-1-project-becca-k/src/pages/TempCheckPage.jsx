@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 // import logoWithWords from '../assets/SelfLoveBombwithText.png'
 import emotionsWheel from '../assets/EmotionsWheel.png'
-import SpecificSlbButton from '../components/specificSlbButton';
+import SpecificSlbButton from '../components/specificSlbButton.jsx';
 
 function TempCheckPage () {
   
@@ -13,12 +13,8 @@ function TempCheckPage () {
   return (
     <>
     <div>
-        {/* <img class = "logo1"> src={logoWithWords} </img> 
-        
-        style = {{width:'900px', height: 'auto', align: 'center'}}
-         */}
-
     <h1> Today I am feeling...</h1>
+    
     <><button className = "button1" onClick={() => setFeeling("sad")}>Sad</button></>
     <><button className = "button1" onClick={() => setFeeling("angry")}>Angry</button></>
     <><button className = "button1" onClick={() => setFeeling("depressed")}>Depressed</button></>
@@ -26,6 +22,7 @@ function TempCheckPage () {
     <><button className = "button1" onClick={() => setFeeling("happy")}>Happy</button></>
     <><button className = "button1" onClick={() => setFeeling("excited")}>Excited</button></>
     <><button className = "button1" onClick={() => setFeeling("neutral")}>Neutral</button></>
+
     <p> Current Feeling: {feeling}</p>
 
     <h1> About my...</h1>
@@ -34,37 +31,21 @@ function TempCheckPage () {
     <><button className = "button2" onClick={() => setKey("body")}>Body</button></>
     <><button className = "button2" onClick={() => setKey("relationship")}>Relationship</button></>
     <><button className = "button2" onClick={() => setKey("purpose")}>Purpose</button></>
-
-    <p>Current Key: {key}</p>
-    
+    <><button className = "button2" onClick={() => setKey("purpose")}>Life In general</button></>
+    <><button className = "button2" onClick={() => setKey("purpose")}>Something Else</button></>
+    </div>
+    <p>Current Key: {key}</p>   
+    <SpecificSlbButton category = {key}/>
 
     <img 
         src={emotionsWheel}
         style = {{width:'600px', height: 'auto', align: 'center'}}
         alt="A list of emotions superimposed onto the color wheel'" />
-    
-    </div>
-
-    <div className = "messageDisplaySection">
-      <SpecificSlbButton category={key}></SpecificSlbButton>
-    </div>
-
-    
 </>
     
-
-    
-
   
   )
 }
 
-export default TempCheckPage
 
-
-
-
-// function MyComponent() {
-//   const [age, setAge] = useState(28);
-//   const [name, setName] = useState('Taylor');
-//   const [todos, setTodos] = useState(() => createTodos());
+export default TempCheckPage;
