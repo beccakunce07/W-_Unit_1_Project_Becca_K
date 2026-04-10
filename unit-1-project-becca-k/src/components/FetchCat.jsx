@@ -1,0 +1,56 @@
+import React, { useState, useEffect } from 'react';
+
+const CatPic = () => {
+  const [catImage, setCatImage] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const fetchCat = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch("https://api.thecatapi.com/v1/images/search");
+      const data = await response.json();
+      setCatImage(data[0].url); // data.message contains the image URL
+    } catch (error) {
+      console.error("Error fetching kitty:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Optional: Load a dog immediately when the page first opens
+  useEffect(() => {
+    fetchCat();
+  }, []);
+
+  return (
+    <div style={{ textAlign: 'right', marginTop: '50px' }}>
+      <h3>Random Cat Generator</h3>
+      
+      <div style={{ minHeight: '350px', marginBottom: '20px' }}>
+        {loading ? (
+          <p>Finding a kitty...</p>
+        ) : (
+          catImage && <img    src={catImage}
+            alt="A sweetie angel baby kitty"
+            style={{
+                maxWidth: '300px',
+                borderRadius: '10px',
+                display: 'block',    
+                marginLeft: 'auto'  
+    }}
+  />
+)} 
+      </div>
+
+      <button className = 'button1'
+        onClick={fetchCat} 
+        disabled={loading}
+        style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer' }}
+      >
+        {loading ? "Loading..." : "Pssp Pssp"}
+      </button>
+    </div>
+  );
+};
+
+export default CatPic;

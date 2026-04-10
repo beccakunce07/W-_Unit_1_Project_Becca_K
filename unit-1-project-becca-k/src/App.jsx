@@ -6,21 +6,27 @@ import TempCheckPage from './pages/TempCheckPage.jsx';
 import CreateYourOwnSLBPage from './pages/CreateYourOwnPage.jsx';
 import PageFooter from './components/footer.jsx';
 import PageHeader from './components/PageHeader.jsx';
+import FetchDogPage from "./pages/FetchAnimalPage.jsx";
+import FetchAnimalPage from "./pages/FetchAnimalPage.jsx";
 
 function App() {
   
   return (
     <>
-    <PageHeader></PageHeader>
-    <div className = "routes">
+     <div>
+      <PageHeader></PageHeader>
       <Routes>
       <Route path = '/AboutPage' element ={<AboutPage></AboutPage>}></Route>
       <Route path = '/' element ={<HomePage></HomePage>}></Route>
       <Route path = '/TempCheckPage' element ={<TempCheckPage/>}></Route>
-      <Route path = '/CreateYourOwnPage' element ={<CreateYourOwnSLBPage></CreateYourOwnSLBPage>}></Route>      
+      <Route path = '/CreateYourOwnPage' element ={<CreateYourOwnSLBPage></CreateYourOwnSLBPage>}></Route>
+      <Route path = '/FetchAnimalPage' element ={<FetchAnimalPage></FetchAnimalPage>}></Route>            
       </Routes>
+      <PageFooter></PageFooter>
     </div>
-    <PageFooter></PageFooter>
+    
+   
+    
      
     
    

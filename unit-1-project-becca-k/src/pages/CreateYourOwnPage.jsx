@@ -1,18 +1,17 @@
 import CYOForm from "../components/CYOForm";
+import DisplayBank from "../components/DisplayBank";
 
 function  CreateYourOwnSLBPage () {
-
-    // const [message, setMessage]= useState("");
-
     return (
+        <>
         <div>
             <h1>Create Your Own Self Love Bomb Here</h1>
-            <CYOForm></CYOForm>
-            
+            <CYOForm />
         </div>
+        </>
     )
 
 }
-//form
 
-export default CreateYourOwnSLBPage;
+
+export default CreateYourOwnSLBPage

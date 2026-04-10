@@ -1,130 +1,117 @@
-/* .pageHeader {
-
+/* --- Variables --- */
+:root {
+  --dark-green: #11B27C;
+  --light-green: #ECF6E8;
+  --gold: #CD8D2B;
+  --red: #D50000;
+  --dark-grey: #333333;
 }
 
-.pageFooter {
-
-} */
-
-.appHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #ECF6E8;
-  color: #D50000; 
-}
-
-
-.appHeader-outline {
-  outline-color: #11B27C;
-  text-shadow: 
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
-}
-.pageHeader nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  align-items: center;
-}
-
-.navbar {
-    display: flex;
-    list-style: none;
-
-}
-
-.logo1 {
-    display: flex;
-    align-items: center;
-    width: '300';
-    height: 'auto';
-}
-
-.logoFooter {
-    width: '150';
-    height: 'auto';
-    align-items: center;
-
-}
-
-
+/* --- Base Elements --- */
 body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    color: #333;
-} */
-
+  background-color: #ECF6E8;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  color: var(--dark-grey);
+}
 
 h1 {
-    color: #D50000;
-    text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  color: var(--red);
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+  color: var(--dark-green);
+  display: flex;
+  justify-content: center;
 }
 
 h3 {
-    color: #2c3e50;
-    text-align: left;
+  color: #11B27C;
+  text-align: right;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 36px;
+  
+
 }
 
 p {
-    color: #CD8D2B;
+  color: var(--gold);
 }
 
-.content-box {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-#main-footer {
-    font-size: 0.8rem;
-    text-align: center;
-    margin-top: 50px;
-}
 a {
-    color: #3498db;
-    text-decoration: none;
+  color: var(--dark-green);
+  text-decoration: none;
 }
+
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-.buttonGroup {
-    display: flex;
-  justify-content: center; 
-  align-items: center;     
-    
-}
-.button1 {
-    background-color: #11B27C;
-    border: 6px;
-    color: #ECF6E8;
-    padding: 10px;
-    cursor: pointer;
-    
+img {
+  width: 500px;
+  height: auto;
+  display: block; /* Removes bottom whitespace gaps */
 }
 
-.button2 {
-    background-color: #11B27C;
-    border: 6px;
-    color: #ECF6E8;
-    padding: 10px;
-    cursor: pointer;
-    
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  border: 4px double var(--gold);
+  padding: 0rem;
+}
+
+.navbar, ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-evenly; /* Picked one; override others as needed */
+  overflow: hidden;
+}
+
+.footer-containter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  border: 4px double var(--gold);
+  padding: 0px;
+}
+
+/* --- Specific Components --- */
+.logo1 {
+  display: flex;
+  align-items: center;
+  width: 300px; 
+  height: auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Combined Button Styles */
+.button1, .button2, .button3 {
+  border: #11B27C;
+  padding: 15px 25px;
+  cursor: pointer;
+  color: var(--light-green);
+  background-color: var(--dark-green);
+}
+.button1:hover, .button2:hover, .button3:hover {
+  background-color: #CD8D2B;
 }
 
 .button3 {
-    background-color: #D50000;
-    border: 6px;
-    color: #ECF6E8;
-    padding: 10px;
-    cursor: pointer;
-    
-} 
+  background-color: var(--red);
+}
+

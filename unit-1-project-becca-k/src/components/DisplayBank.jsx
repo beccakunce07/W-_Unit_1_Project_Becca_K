@@ -1,6 +1,5 @@
 import slbBank from "./slbBank.jsx";
 // import { MdPlayArrow, MdPause } from "react-icons/md"; // Material Design
-// import React, { useState } from 'react';
 
 function DisplayBank() {
   return (

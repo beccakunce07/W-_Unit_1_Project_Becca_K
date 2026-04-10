@@ -7,7 +7,6 @@ import DisplayBank from "../components/DisplayBank";
 
 function HomePage () {
     
-
     return (
         <>
         <div>
@@ -15,6 +14,7 @@ function HomePage () {
         <p>Welcome to Self Love Bombs</p>
         </div>
         <DisplayBank></DisplayBank>
+
 
         
         </>

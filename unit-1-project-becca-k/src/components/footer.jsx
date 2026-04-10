@@ -6,12 +6,12 @@ function PageFooter() {
     return (
         <footer>
             <>
-            <div className = "pageFooter">
+            <div className = "footer-container">
                 <img src = {logo}/>
-                <h3>
+                <p>
                     &copy; 2026 Becca Kunce. All Rights Reserved
         
-                </h3>
+                </p>
                 <ul>
                     <li><Link to="https://www.linkedin.com/in/becca-kunce-a0013255/">Connect On LinkedIn</Link></li>
                 </ul>

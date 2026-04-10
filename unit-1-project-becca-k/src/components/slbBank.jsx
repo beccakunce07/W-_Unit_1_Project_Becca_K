@@ -30,10 +30,26 @@ const slbBank =
     {message: "I am capable of doing things differently and succeeding.", key: "purpose"},
     {message: "My path does not have to look like others to be valid.", key: "purpose"},
     {message: "I create impact simply by being fully myself.", key: "purpose"},
+    {message: "I am enough just as I am right now.", key: "life in general"},
+    {message: "I alone hold the truth of who I am.", key: "life in general"},
+    {message: "I accept myself unconditionally and without judgment.", key: "life in general"},    
+    {message: "My value is not determined by my productivity or accomplishments.", key: "life in general"},
+    {message: "I am allowed to take up space and have a voice.", key: "life in general"},
+    {message: "My mind is a calm space where I can think clearly.", key: "something else"},
+    {message: "I choose to respond with peace, even when things are hectic.", key: "something else"},
+    {message: "I am the quiet observer of my thoughts, not a prisoner to them.", key: "something else"},
+    {message: "My inner world is steady and grounded.", key: "something else"}
+
+
+
+
+
+
 ]
 
  export default slbBank;
  
+
 
  
  
