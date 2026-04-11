@@ -2,7 +2,7 @@
       /* <img src={feelingsWheel} alt="A circle with all the colors of the rainbow with the range of emotions transcribed over it" />; */
 import React, { useState } from 'react';
 // import logoWithWords from '../assets/SelfLoveBombwithText.png'
-import emotionsWheel from '../assets/EmotionsWheel.png'
+// import emotionsWheel from '../assets/EmotionsWheel.png'
 import SpecificSlbButton from '../components/specificSlbButton.jsx';
 
 function TempCheckPage () {
@@ -37,11 +37,11 @@ function TempCheckPage () {
     {/* <p>Current Key: {key}</p>    */}
     <SpecificSlbButton category = {key}/>
 
-    <img 
+    {/* <img 
         src={emotionsWheel}
         alt="A list of emotions superimposed onto the color wheel'"
         style={{ borderRadius: '20px' }} 
-/>
+/> */}
 </>
     
   

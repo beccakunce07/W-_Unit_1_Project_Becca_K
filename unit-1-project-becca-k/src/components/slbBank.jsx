@@ -41,10 +41,6 @@ const slbBank =
     {message: "My inner world is steady and grounded.", key: "something else"}
 
 
-
-
-
-
 ]
 
  export default slbBank;
