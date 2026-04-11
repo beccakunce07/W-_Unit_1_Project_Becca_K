@@ -1,5 +1,5 @@
 import NavBar from './navBar';
-import SelfLoveBombWithText from './logoWithWords'
+import SelfLoveBombWithText from './SelfLoveBombWithText'
 import SlbButton from './slbButton';
 
 function PageHeader () {
