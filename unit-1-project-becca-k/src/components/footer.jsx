@@ -1,4 +1,4 @@
-import SelfLoveBomb from './SelfLoveBomb'
+import SelfLoveBomb from '../SelfLoveBomb.jsx'
 import { Link } from 'react-router-dom'
 
 

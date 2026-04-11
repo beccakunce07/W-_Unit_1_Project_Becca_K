@@ -1,4 +1,4 @@
-import SelfLoveBombWithText from "./assets/SelfLoveBombWithText.png";
+import SelfLoveBombWithText from "../assets/SelfLoveBombWithText.png";
 
 
 export { SelfLoveBombWithText };
