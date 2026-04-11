@@ -1,4 +1,4 @@
-import SelfLoveBomb from './SelfLoveBomb.jsx'
+import {SelfLoveBombImage} from './SelfLoveBombImage.jsx'
 import { Link } from 'react-router-dom'
 
 
@@ -7,7 +7,7 @@ function PageFooter() {
         <footer>
             <>
             <div className = "footer-container">
-                <img src = {SelfLoveBomb} alt = "An outline of a heart with lit fuses on the ends." />
+                <img src = {SelfLoveBombImage} alt = "An outline of a heart with lit fuses on the ends." />
                 <p>
                     &copy; 2026 Becca Kunce. All Rights Reserved
         

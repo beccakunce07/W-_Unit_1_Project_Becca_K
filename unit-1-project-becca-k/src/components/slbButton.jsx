@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SelfLoveBomb } from "./SelfLoveBomb";
+import { SelfLoveBombImage } from "./SelfLoveBombImage";
 import SlbBank from "./slbBank";
 
 
@@ -29,7 +29,7 @@ function SlbButton() {
     <>
     
         <button onClick={handleClick} style={{ border: 'none', background: 'none', padding: 0, cursor: 'pointer' }}>
-        <h3>Click here for a love bomb👇</h3> <img src= {SelfLoveBomb} alt = "An outline of a heart with lit fuses on the ends." style = {{ width: '200px', justifyContent: 'center'}} />
+        <h3>Click here for a love bomb👇</h3> <img src= {SelfLoveBombImage} alt = "An outline of a heart with lit fuses on the ends." style = {{ width: '200px', justifyContent: 'center'}} />
         </button>
       
       {/* Playback Button - only shows if there is a message */}
