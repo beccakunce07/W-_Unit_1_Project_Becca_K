@@ -10,7 +10,7 @@ function HomePage () {
     return (
         <>
         <div>
-        <h1>Home</h1>
+        <h1>You're Home</h1>
         <p>Welcome to Self Love Bombs</p>
         </div>
         <DisplayBank></DisplayBank>

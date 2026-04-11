@@ -34,7 +34,7 @@ function TempCheckPage () {
     <><button className = "button2" onClick={() => setKey("life in general")}>Life in general</button></>
     <><button className = "button2" onClick={() => setKey("something else")}>Something Else</button></>
     </div>
-    <p>Current Key: {key}</p>   
+    {/* <p>Current Key: {key}</p>    */}
     <SpecificSlbButton category = {key}/>
 
     <img 

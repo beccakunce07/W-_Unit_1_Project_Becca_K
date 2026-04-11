@@ -2,11 +2,8 @@
 function AboutPage() {
   return (
     <>
-      
       <h1>About Self Love Bombs</h1>
-      <p>COPY HERE</p>
-
-
+      <p>Hello and thank you for using self</p>
     </>
   );
 }

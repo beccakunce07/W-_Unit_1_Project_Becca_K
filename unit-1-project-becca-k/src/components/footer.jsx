@@ -7,13 +7,14 @@ function PageFooter() {
         <footer>
             <>
             <div className = "footer-container">
-                <img src = {logo}/>
+                <img src = {logo} alt = "An outline of a heart with lit fuses on the ends." />
                 <p>
                     &copy; 2026 Becca Kunce. All Rights Reserved
         
                 </p>
                 <ul>
                     <li><Link to="https://www.linkedin.com/in/becca-kunce-a0013255/">Connect On LinkedIn</Link></li>
+                    <li>Email: rebeccakunce@gmail.com</li>
                 </ul>
             </div>
             </>

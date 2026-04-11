@@ -45,6 +45,24 @@ a {
   color: var(--dark-green);
   text-decoration: none;
 }
+.cyo-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-title {
+  text-align: center;
+  color:#11B27C
+}
+
+#links {
+    font-size: 30px;
+}
 
 a:hover {
   text-decoration: underline;
@@ -54,25 +72,47 @@ img {
   width: 500px;
   height: auto;
   display: block; /* Removes bottom whitespace gaps */
+  background-color: #ECF6E8; /* Your desired color */
+  padding: 0px;
+  border: 0;
+  margin: 0;
 }
 
 .header-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  align-items: center;
   background-color: var(--light-green);
   color: var(--dark-green);
   border: 4px double var(--gold);
   padding: 0rem;
 }
 
-.navbar, ul {
+.navbar a{
+    color:#11B27C
+
+}
+nav {
+    justify-content: center
+}
+.navbar ul {
   display: flex;
   list-style-type: none;
+  gap: 20px;          /* This creates the spacing between links */
   padding: 0;
   margin: 0;
-  justify-content: space-evenly; /* Picked one; override others as needed */
-  overflow: hidden;
+}
+
+footer {
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  border: 4px double var(--gold);
+  padding: 0px;
+
 }
 
 .footer-containter {

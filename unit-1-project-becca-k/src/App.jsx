@@ -6,7 +6,6 @@ import TempCheckPage from './pages/TempCheckPage.jsx';
 import CreateYourOwnSLBPage from './pages/CreateYourOwnPage.jsx';
 import PageFooter from './components/footer.jsx';
 import PageHeader from './components/PageHeader.jsx';
-import FetchDogPage from "./pages/FetchAnimalPage.jsx";
 import FetchAnimalPage from "./pages/FetchAnimalPage.jsx";
 
 function App() {
@@ -24,13 +23,6 @@ function App() {
       </Routes>
       <PageFooter></PageFooter>
     </div>
-    
-   
-    
-     
-    
-   
-    
     
     </>
   )
