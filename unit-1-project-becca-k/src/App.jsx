@@ -1,7 +1,7 @@
 import { Routes, Route} from "react-router-dom";
 import './index.css';
-import AboutPage from './pages/aboutPage.jsx';
-import HomePage from './pages/homePage.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import HomePage from './pages/HomePage.jsx';
 import TempCheckPage from './pages/TempCheckPage.jsx';
 import CreateYourOwnSLBPage from './pages/CreateYourOwnPage.jsx';
 import PageFooter from './components/footer.jsx';

@@ -1,157 +1,88 @@
-/* --- Variables --- */
+
 :root {
   --dark-green: #11B27C;
   --light-green: #ECF6E8;
   --gold: #CD8D2B;
   --red: #D50000;
   --dark-grey: #333333;
+  --radius: 12px; 
 }
 
-/* --- Base Elements --- */
 body {
-  background-color: #ECF6E8;
-  font-family: Arial, sans-serif;
+  background-color: var(--light-green);
+  font-family: 'Trebuchet MS', sans-serif;
   line-height: 1.6;
   margin: 20px;
   color: var(--dark-grey);
 }
 
-h1 {
-  color: var(--red);
-  text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+h1, h2, h3 { 
+  text-align: center; 
+  margin-bottom: 1rem;
 }
 
-h2 {
-  color: var(--dark-green);
-  display: flex;
-  justify-content: center;
+h1 { color: var(--red); }
+h2 { color: var(--dark-green); display: flex; align-items: center; justify-content: center; gap: 10px; }
+h3 { color: var(--dark-green); font-size: 36px; text-align: right; }
+p { color: var(--gold); }
+
+a { 
+  color: var(--dark-green); 
+  text-decoration: none; 
+  transition: 0.3s; 
+}
+a:hover { text-decoration: underline; opacity: 0.8; }
+
+img { 
+  max-width: 500px; 
+  height: auto; 
+  display: block; 
+  border-radius: var(--radius); /* Rounds image corners */
 }
 
-h3 {
-  color: #11B27C;
-  text-align: right;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 36px;
-  
-
-}
-
-p {
-  color: var(--gold);
-}
-
-a {
-  color: var(--dark-green);
-  text-decoration: none;
-}
-.cyo-container {
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.form-title {
-  text-align: center;
-  color:#11B27C
-}
-
-#links {
-    font-size: 30px;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  width: 500px;
-  height: auto;
-  display: block; /* Removes bottom whitespace gaps */
-  background-color: #ECF6E8; /* Your desired color */
-  padding: 0px;
-  border: 0;
-  margin: 0;
-}
-
-.header-container {
+.header-container, .footer-container, footer {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   background-color: var(--light-green);
-  color: var(--dark-green);
   border: 4px double var(--gold);
-  padding: 0rem;
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
 }
 
-.navbar a{
-    color:#11B27C
-
-}
-nav {
-    justify-content: center
-}
 .navbar ul {
   display: flex;
-  list-style-type: none;
-  gap: 20px;          /* This creates the spacing between links */
+  list-style: none;
+  gap: 20px;
   padding: 0;
-  margin: 0;
 }
 
-footer {
-   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--light-green);
-  color: var(--dark-green);
-  border: 4px double var(--gold);
-  padding: 0px;
-
-}
-
-.footer-containter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--light-green);
-  color: var(--dark-green);
-  border: 4px double var(--gold);
-  padding: 0px;
-}
-
-/* --- Specific Components --- */
-.logo1 {
-  display: flex;
-  align-items: center;
-  width: 300px; 
-  height: auto;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-/* Combined Button Styles */
 .button1, .button2, .button3 {
-  border: #11B27C;
-  padding: 15px 25px;
+  padding: 12px 24px;
   cursor: pointer;
+  border: none;
+  border-radius: 50px; /* Pill shape is cute */
+  font-weight: bold;
+  transition: all 0.3s ease;
   color: var(--light-green);
   background-color: var(--dark-green);
 }
+
+.button3 { background-color: var(--red); }
+
 .button1:hover, .button2:hover, .button3:hover {
-  background-color: #CD8D2B;
+  background-color: var(--gold);
+  transform: translateY(-2px); /* pop effect */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.button3 {
-  background-color: var(--red);
+.play-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s;
 }
-
+.play-btn:hover { transform: scale(1.2); }

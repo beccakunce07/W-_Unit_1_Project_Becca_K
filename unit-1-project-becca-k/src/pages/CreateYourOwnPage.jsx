@@ -1,5 +1,4 @@
 import CYOForm from "../components/CYOForm";
-import DisplayBank from "../components/DisplayBank";
 
 function  CreateYourOwnSLBPage () {
     return (

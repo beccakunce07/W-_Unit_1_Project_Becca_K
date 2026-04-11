@@ -33,7 +33,7 @@ const CatPic = () => {
           catImage && <img    src={catImage}
             alt="A sweetie angel baby kitty"
             style={{
-                maxWidth: '300px',
+                maxWidth: '900px',
                 borderRadius: '10px',
                 display: 'block',    
                 marginLeft: 'auto'  
