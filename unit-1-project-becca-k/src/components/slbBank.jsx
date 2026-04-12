@@ -1,4 +1,4 @@
-const slbBank = 
+const SlbBank = 
 [
     {message: "Money flows to me through aligned, meaningful work.", key: "finances"},
     {message: "I am capable of creating wealth without compromising my values.", key: "finances"},
@@ -43,7 +43,7 @@ const slbBank =
 
 ]
 
- export default slbBank;
+ export default SlbBank;
  
 
 
