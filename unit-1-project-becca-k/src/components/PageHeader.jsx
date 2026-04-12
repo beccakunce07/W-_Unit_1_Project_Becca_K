@@ -1,6 +1,6 @@
-import NavBar from './NavBar.jsx';
-import SlbButton from './SlbButton.jsx';
-import {SelfLoveBombImage} from "./SelfLoveBombImage.jsx";
+import {NavBar} from './NavBar.jsx';
+import {SlbButton} from './SlbButton.jsx';
+// import {SelfLoveBombImage} from "./SelfLoveBombImage.jsx";
 import React, {useEffect} from 'react';
 
 function PageHeader ({title}) {
