@@ -1,6 +1,6 @@
 import { useState } from "react";
 import  SelfLoveBombImage  from "./SelfLoveBombImage.jsx";
-import SlbBank from "./SlbBank.jsx";
+import { SlbBank } from "./SlbBank.jsx";
 
 
 function SlbButton() {
