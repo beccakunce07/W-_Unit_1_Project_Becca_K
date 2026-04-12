@@ -24,7 +24,7 @@ const CatPic = () => {
 
   return (
     <div style={{ textAlign: 'right', marginTop: '50px' }}>
-      <h3>Random Cat Generator</h3>
+      <h3>For the cat lovers</h3>
       
       <div style={{ minHeight: '350px', marginBottom: '20px' }}>
         {loading ? (
@@ -33,7 +33,7 @@ const CatPic = () => {
           catImage && <img    src={catImage}
             alt="A sweetie angel baby kitty"
             style={{
-                maxWidth: '900px',
+                maxWidth: '300px',
                 borderRadius: '10px',
                 display: 'block',    
                 marginLeft: 'auto'  

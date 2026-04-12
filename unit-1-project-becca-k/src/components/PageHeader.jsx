@@ -1,18 +1,24 @@
-import NavBar from './navBar';
-import SlbButton from './slbButton';
-import {SelfLoveBombWithTextImage} from "./SelfLoveBombWithTextImage.jsx";
+import NavBar from './NavBar.jsx';
+import SlbButton from './SlbButton.jsx';
+import {SelfLoveBombImage} from "./SelfLoveBombImage.jsx";
+import React, {useEffect} from 'react';
 
-function PageHeader () {
+function PageHeader ({title}) {
+
+    useEffect(() => {
+    document.title = title;
+}, [title]);
+
+
     return (
         <>
-        <div className = "header-container">
-        <img //inserting logo, navbar and SLB button so it is at the top of every page.
-        src={SelfLoveBombWithTextImage}
-        alt="An outline of a heart with lit fuses on the ends. The words 'Self Love Bombs' in soft font. Sub text 'Because love only needs a spark.'"/>
-        <SlbButton></SlbButton>
-        </div>
-        <NavBar></NavBar> 
-        
+        <header>
+            <div className = "header-inset">
+            <SlbButton />
+            <h1 class = "main-title"> {title}</h1>
+            </div>
+            <NavBar />
+        </header>
         </>        
     )
 }

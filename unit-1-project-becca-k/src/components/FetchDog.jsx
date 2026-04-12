@@ -23,14 +23,14 @@ const DogPic = () => {
   }, []);
 
   return (
-    <div style={{ textAlign: 'left', marginTop: '50px' }}>
-      <h3>Sometimes we need some classic pet inspiration</h3>
+    <div>
+      <h3>For the dog lovers</h3>
       
-      <div style={{ minHeight: '350px', marginBottom: '20px' }}>
+      <div style={{ height: '300px', width:'aut', marginBottom: '20px' }}>
         {loading ? (
           <p>Finding a good boy...</p>
         ) : (
-          dogImage && <img src={dogImage} alt="A random dog" style={{ maxWidth: '900px', borderRadius: '10px' }} />
+          dogImage && <img src={dogImage} alt="A sweetie angel muffin dog" style={{ maxWidth: '300px', borderRadius: '10px' }} />
         )}
       </div>
 

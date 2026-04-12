@@ -5,12 +5,26 @@
   --gold: #CD8D2B;
   --red: #D50000;
   --dark-grey: #333333;
-  --radius: 12px; 
 }
+
+.app-wrapper {
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    border: 2px double var(--dark-green);
+    border-radius: 11px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+
 
 body {
   background-color: var(--light-green);
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.6;
   margin: 20px;
   color: var(--dark-grey);
@@ -19,6 +33,9 @@ body {
 h1, h2, h3 { 
   text-align: center; 
   margin-bottom: 1rem;
+  justify-content: center;
+  font-size: 24px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 h1 { color: var(--red); }
@@ -34,13 +51,15 @@ a {
 a:hover { text-decoration: underline; opacity: 0.8; }
 
 img { 
-  max-width: 500px; 
+  max-width: 300px; 
   height: auto; 
-  display: block; 
-  border-radius: var(--radius); /* Rounds image corners */
-}
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-shrink: auto;}
 
-.header-container, .footer-container, footer {
+
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +67,73 @@ img {
   border: 4px double var(--gold);
   padding: 1rem;
   border-radius: var(--radius);
-  margin-bottom: 20px;
+  margin: 0;
+  width: auto;
+}
+
+
+
+.header {
+  
+  padding: 0px;
+  width: auto;
+
+}
+
+.header-inset {
+  border: 2px double var(--dark-green);
+  background-image: url("assets/SelfLoveBombImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  margin-top: 60px;
+  width: 100%;
+  border-radius: 11px;
+
+}
+
+.bomb-button {
+  
+  padding: 0px;
+  margin: 30px;
+  cursor: 'pointer';
+  border: 1.3px solid var(--gold);
+  border-radius: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.bomb-button:hover {
+  background-color: var(--gold);
+  transform: translateY(-3px); /* pop effect */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.main-title {
+  font-family: 'Dancing Script', cursive;
+  color: #11B27C; /* Darker green */
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  margin: 20px;
+  border: 2px double var(--gold);
+  border-radius: 11px;
+}
+
+.header h1 {
+  color:#ECF6E8;
+  font-size: 63px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+
 }
 
 .navbar ul {
@@ -56,6 +141,10 @@ img {
   list-style: none;
   gap: 20px;
   padding: 0;
+  font-size: 18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+
 }
 
 .button1, .button2, .button3 {
@@ -67,6 +156,8 @@ img {
   transition: all 0.3s ease;
   color: var(--light-green);
   background-color: var(--dark-green);
+  justify-content: center;
+  margin: 4px;
 }
 
 .button3 { background-color: var(--red); }
@@ -84,5 +175,129 @@ img {
   cursor: pointer;
   padding: 5px;
   transition: transform 0.2s;
+  
 }
 .play-btn:hover { transform: scale(1.2); }
+
+/* Container to center the form on the page */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ECF6E8;
+  font-family: 'Inter', system-ui, sans-serif;
+  padding: 30px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ECF6E8 ;
+  border: 2px;
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin: 0;
+  background-image: url('../components/SelfLoveBombWithTextImage.jsx');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.page-container-left {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* .page-container-right {
+
+}
+
+.page-container-middle {
+
+} */
+
+.contact-card {
+  background:rgba(205, 141, 43, 0.8);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 450px;
+}
+
+.contact-card h2 {
+  margin-top: 0;
+  color: #ECF6E8;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contact-card p {
+  color: #ECF6E8;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ECF6E8;
+  font-size: 14px;
+}
+
+/* Input & Textarea styling */
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: #CD8D2B;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #11B27C;
+  color: white;
+  border: solid;
+  border-color: #ECF6E8;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+
+  background-color: #D50000;
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}

@@ -8,9 +8,9 @@ const Navbar = () => {
       <ul>
         <li><Link to="/">You're Home</Link></li>
         <li><Link to="/AboutPage">About Self Love Bombs</Link></li>
-        <li><Link to="/TempCheckPage">Check In</Link></li>
+        <li><Link to="/CheckInPage">Let's Check In</Link></li>
         <li><Link to="/CreateYourOwnPage">Create Your Own Love Bomb</Link></li>
-        <li><Link to="/FetchAnimalPage">Pet Inspiration</Link></li>
+        <li><Link to="/PetLoveBombPage">Pet Love Bombs</Link></li>
       </ul>
     </div>   
     </nav>

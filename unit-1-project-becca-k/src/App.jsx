@@ -2,24 +2,22 @@ import { Routes, Route} from "react-router-dom";
 import './index.css';
 import AboutPage from './pages/AboutPage.jsx';
 import HomePage from './pages/HomePage.jsx';
-import TempCheckPage from './pages/TempCheckPage.jsx';
+import CheckInPage from './pages/CheckInPage.jsx';
 import CreateYourOwnSLBPage from './pages/CreateYourOwnPage.jsx';
-import PageFooter from './components/footer.jsx';
-import PageHeader from './components/PageHeader.jsx';
-import FetchAnimalPage from "./pages/FetchAnimalPage.jsx";
+import PageFooter from './components/PageFooter.jsx';
+import PetLoveBombPage from "./pages/PetLoveBombPage.jsx";
 
 function App() {
   
   return (
     <>
-     <div>
-      <PageHeader></PageHeader>
+     <div className = "app-wrapper">
       <Routes>
       <Route path = '/AboutPage' element ={<AboutPage></AboutPage>}></Route>
       <Route path = '/' element ={<HomePage></HomePage>}></Route>
-      <Route path = '/TempCheckPage' element ={<TempCheckPage/>}></Route>
+      <Route path = '/CheckInPage' element ={<CheckInPage></CheckInPage>}></Route>
       <Route path = '/CreateYourOwnPage' element ={<CreateYourOwnSLBPage></CreateYourOwnSLBPage>}></Route>
-      <Route path = '/FetchAnimalPage' element ={<FetchAnimalPage></FetchAnimalPage>}></Route>            
+      <Route path = '/PetLoveBombPage' element ={<PetLoveBombPage></PetLoveBombPage>}></Route>            
       </Routes>
       <PageFooter></PageFooter>
     </div>

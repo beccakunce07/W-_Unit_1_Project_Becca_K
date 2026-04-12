@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SlbBank from "./slbBank";
+import SlbBank from "./SlbBank";
 
 
 function SpecificSlbButton ({category}) {
@@ -20,11 +20,15 @@ function SpecificSlbButton ({category}) {
 
     return (
     <>
+    <div className="button-container">
       <button className = "button3" onClick={handleClick}>
         Click for a Self Love Bomb
       </button>
-      <h1>{message}</h1>
+      </div>
+
+      <h3>{message}</h3>
     </>
+
       );
     
 };
