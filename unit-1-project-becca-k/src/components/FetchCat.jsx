@@ -45,7 +45,7 @@ const CatPic = () => {
       <button className = 'button1'
         onClick={fetchCat} 
         disabled={loading}
-        style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer' }}
+        style={{ padding: 'auto', fontSize: '16px', cursor: 'pointer' }}
       >
         {loading ? "Loading..." : "Pssp Pssp"}
       </button>

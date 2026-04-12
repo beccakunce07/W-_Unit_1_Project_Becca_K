@@ -1,10 +1,13 @@
 import { Link} from "react-router-dom";
+import SelfLoveBombWithTextImage from "./SelfLoveBombWithTextImage.jsx";
+import React from "react";
 
 const NavBar = () => {
   return (
     <>  
     <nav>
     <div className = "navbar">
+      <img src={SelfLoveBombWithTextImage} alt="Self Love Bombs logo" />
       <ul>
         <li><Link to="/">You're Home</Link></li>
         <li><Link to="/AboutPage">About Self Love Bombs</Link></li>

@@ -37,7 +37,7 @@ const DogPic = () => {
       <button className='button3'
         onClick={fetchDog} 
         disabled={loading}
-        style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer' }}
+        style={{ padding: 'auto', fontSize: '16px', cursor: 'pointer' }}
       >
         {loading ? "Loading..." : "Another Good Boy"}
       </button>

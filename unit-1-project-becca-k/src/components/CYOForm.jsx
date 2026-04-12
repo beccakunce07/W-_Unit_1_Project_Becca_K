@@ -39,11 +39,11 @@ function CYOForm() {
   return (
     <div>   
       <form className ="CYOform" onSubmit = {handleSubmit}>
-        <label for="message">Speak Kindly to Yourself Here Please:</label>
+        <label htmlFor="message">Speak Kindly to Yourself Here Please:</label>
         <input value = {input} 
         onChange = {(m) => setInput(m.target.value)}
         placeholder = "i.e. 'I am loved and adored allways always.'"/>
-        <label for="key">This relates to my:</label>
+        <label htmlFor="key">This relates to my:</label>
         <select id="category">
           <option value="Finances">finances</option>
           <option value="Body">body</option>

@@ -6,12 +6,14 @@ import CheckInPage from './pages/CheckInPage.jsx';
 import CreateYourOwnPage from './pages/CreateYourOwnPage.jsx';
 import PageFooter from './components/PageFooter.jsx';
 import PetLoveBombPage from "./pages/PetLoveBombPage.jsx";
+import NavBar from "./components/NavBar.jsx";
 
 function App() {
   
   return (
     <>
      <div className = "app-wrapper">
+      <NavBar />
       <Routes>
       <Route path = '/AboutPage' element ={<AboutPage></AboutPage>}></Route>
       <Route path = '/' element ={<HomePage></HomePage>}></Route>
