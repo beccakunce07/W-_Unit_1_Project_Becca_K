@@ -1,1 +1,3 @@
-export { default as SelfLoveBombImage } from '../assets/SelfLoveBombImage.png';
+import SelfLoveBombImage from '../assets/SelfLoveBombImage.png';
+
+export default SelfLoveBombImage;

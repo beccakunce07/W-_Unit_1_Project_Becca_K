@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import {EmotionsWheelImage} from '../components/EmotionsWheelImage.jsx'
-import { SpecificSlbButton } from '../components/SpecificSlbButton.jsx';
+import SpecificSlbButton from '../components/SpecificSlbButton.jsx';
 import PageHeader from '../components/PageHeader.jsx';
 
 function CheckInPage () {
@@ -10,7 +10,7 @@ function CheckInPage () {
 
   return (
     <>
-    <PageHeader title = "Let's Check In"></PageHeader>
+    <PageHeader title = "Let's Check In"/>
     <h1> Today I am feeling...</h1>
     <div className = "button-container">
     <button className = "button1" onClick={() => setFeeling("sad")}>Sad</button>
