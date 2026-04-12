@@ -14,7 +14,6 @@ function SpecificSlbButton ({category}) {
         setMessage(SlbBank[anotherRandomIndex].message);
         }
 
-    
     else (setMessage(filteredArray[randomIndex].message));
   }
 

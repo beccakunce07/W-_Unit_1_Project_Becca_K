@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import SlbBank from './SlbBank.jsx';
+import SlbBank from './slbBank.jsx';
 
 function DisplayBank() {
   const [voices, setVoices] = useState([]);
