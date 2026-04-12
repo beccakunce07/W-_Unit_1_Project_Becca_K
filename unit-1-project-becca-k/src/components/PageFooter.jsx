@@ -1,6 +1,6 @@
 import SelfLoveBombWithTextImage from './SelfLoveBombWithTextImage.jsx';
 import { Link } from 'react-router-dom';
-import ContactUsForm from './ContactUsForm.jsx';
+import { ContactUsForm } from './ContactUsForm.jsx';
 
 
 function PageFooter () {

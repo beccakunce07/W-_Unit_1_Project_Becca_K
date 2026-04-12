@@ -39,8 +39,6 @@ const SlbBank =
     {message: "I choose to respond with peace, even when things are hectic.", key: "something else"},
     {message: "I am the quiet observer of my thoughts, not a prisoner to them.", key: "something else"},
     {message: "My inner world is steady and grounded.", key: "something else"}
-
-
 ]
 
  export default SlbBank;

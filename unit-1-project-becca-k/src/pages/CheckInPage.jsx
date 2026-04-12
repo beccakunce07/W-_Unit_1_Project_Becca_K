@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import {EmotionsWheelImage} from '../components/EmotionsWheelImage.jsx'
-import SpecificSlbButton from '../components/SpecificSlbButton';
+import { SpecificSlbButton } from '../components/SpecificSlbButton';
 import PageHeader from '../components/PageHeader';
 
 function CheckInPage () {
