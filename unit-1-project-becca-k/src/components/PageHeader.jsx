@@ -9,13 +9,12 @@ function PageHeader ({title}) {
     document.title = title;
 }, [title]);
 
-
     return (
         <>
         <header>
             <div className = "header-inset">
             <SlbButton />
-            <h1 class = "main-title"> {title}</h1>
+            <h1 className = "main-title"> {title}</h1>
             </div>
             <NavBar />
         </header>

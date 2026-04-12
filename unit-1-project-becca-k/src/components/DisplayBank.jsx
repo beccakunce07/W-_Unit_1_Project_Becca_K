@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import slbBank from './SlbBank.jsx';
+import SlbBank from './SlbBank.jsx';
 
 function DisplayBank() {
   const [voices, setVoices] = useState([]);
@@ -58,8 +58,9 @@ function DisplayBank() {
           </tr>
         </thead>
         <tbody>
-          {slbBank.map((item) => (
-            <tr key={item.map}>
+          {SlbBank.map((item) => (
+          /* maps over the object to display */
+            <tr key={item.message}> 
               <td>{item.message}</td>
               <td>
                 <button onClick={() => handlePlay(item.message)}>

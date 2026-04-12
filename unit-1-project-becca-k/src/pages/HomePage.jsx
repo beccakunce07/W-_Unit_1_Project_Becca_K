@@ -2,7 +2,7 @@
 //about
 //nav bar
 //slb button
-import ContactUsForm from "../components/ContactUsForm";
+// import ContactUsForm from "../components/ContactUsForm";
 import DisplayBank from "../components/DisplayBank";
 import PageHeader from '../components/PageHeader.jsx';
 

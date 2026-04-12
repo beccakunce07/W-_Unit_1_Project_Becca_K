@@ -1,7 +1,7 @@
 import CYOForm from "../components/CYOForm";
 import PageHeader from "../components/PageHeader";
 
-function  CreateYourOwnSLBPage () {
+function  CreateYourOwnPage () {
     return (
         <>
         <PageHeader title = "Create A Love Bomb"></PageHeader>
@@ -15,4 +15,4 @@ function  CreateYourOwnSLBPage () {
 }
 
 
-export default CreateYourOwnSLBPage
+export default CreateYourOwnPage
