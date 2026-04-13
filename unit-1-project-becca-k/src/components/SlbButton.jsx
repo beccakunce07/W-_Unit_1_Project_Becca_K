@@ -29,7 +29,6 @@ function SlbButton() {
     <>
          {/* <h3>Click here for a love bomb</h3>  */}
         <button className = "bomb-button" onClick={handleClick}>
-        <img src= {SelfLoveBombImage} alt = "An outline of a heart with lit fuses on the ends." />
         </button>
       
       {/* Playback Button - only shows if there is a message */}
