@@ -1,6 +1,6 @@
 import { Routes, Route} from "react-router-dom";
 import './index.css';
-import AboutPage from './pages/AboutPage.jsx';
+import AboutPage from "./pages/AboutPage.jsx";
 import HomePage from './pages/HomePage.jsx';
 import CheckInPage from './pages/CheckInPage.jsx';
 import CreateYourOwnPage from './pages/CreateYourOwnPage.jsx';
@@ -9,7 +9,7 @@ import PetLoveBombPage from "./pages/PetLoveBombPage.jsx";
 import NavBar from "./components/NavBar.jsx";
 
 function App() {
-  
+
   return (
     <>
      <div className = "app-wrapper">
