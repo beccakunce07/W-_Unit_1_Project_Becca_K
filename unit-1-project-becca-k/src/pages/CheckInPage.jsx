@@ -11,8 +11,9 @@ function CheckInPage () {
   return (
     <>
     <PageHeader title = "Let's Check In"/>
-    <div className="page-container">
-      <h1> Today I am feeling...</h1>
+    <div className="page-wrapper">
+      <div className='content-card'>
+      <h2> Today I am feeling...</h2>
       <div className = "button-container">
       <button className = "button1" onClick={() => setFeeling("sad")}>Sad</button>
       <button className = "button1" onClick={() => setFeeling("angry")}>Angry</button>
@@ -24,7 +25,7 @@ function CheckInPage () {
       </div>
       <p>Today I am feeling {feeling.toLocaleLowerCase()}</p>
 
-      <h1> About my...</h1>
+      <h3> About my...</h3>
       
       <div className = "button-container">
       <button className = "button2" onClick={() => setKey("finances")}>Finances</button>
@@ -34,13 +35,13 @@ function CheckInPage () {
       <button className = "button2" onClick={() => setKey("life in general")}>Life in general</button>
       <button className = "button2" onClick={() => setKey("something else")}>Something Else</button>
       </div>
+      
       <p>About my {key}.</p>   
+      
       <SpecificSlbButton category = {key}/>
     </div>
-
-  {/* <img src={EmotionsWheelImage} alt="Emotions transposed over the color wheel" style={{ borderRadius: '20px' }} /> */}
+    </div>
 </>
-    
   
   )
 }

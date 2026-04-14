@@ -1,1 +1,3 @@
-export { default as EmotionsWheelImage } from '../assets/EmotionsWheelImage.png';
+import EmotionsWheelImage from '../assets/EmotionsWheelImage.png';
+
+export default EmotionsWheelImage;

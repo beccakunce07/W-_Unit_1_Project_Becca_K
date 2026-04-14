@@ -64,18 +64,17 @@ function CYOForm() {
           </button>
         </form>
       )}
-
       <ul>
         {messageList.map((item) => (
-          <ul key={item.id}> {/* Changed from <ul> to <li> for valid HTML */}
-            {item.text}
+          <ul key={item.id}>
+            <p>{item.text}</p>
             <button className="button1" onClick={() => startEdit(item)}>Edit</button>
             <button className="button3" onClick={() => deleteItem(item.id)}>Delete</button>
           </ul>
         ))}
       </ul>
     </div> 
-  ); // Properly close the return
+  ); 
 }
 
 export default CYOForm;

@@ -14,7 +14,6 @@ function HomePage() {
     <>
     <PageHeader title="Welcome Home" />
     <div className="page-wrapper">
-        
       <div className="content-card">
         <div className="hero-logo-container">
           <img src={SelfLoveBombWithTextImage} alt="Self Love Bombs logo" className="hero-logo" />

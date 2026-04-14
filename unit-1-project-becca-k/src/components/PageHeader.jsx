@@ -10,9 +10,7 @@ function PageHeader({title}) {
     return (
         <>
             <header>
-                <div className="header-inset">
                     <h1 className="main-title"> {title}</h1>
-                </div>
             </header>
         </>
     )

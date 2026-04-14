@@ -6,16 +6,17 @@ function  CreateYourOwnPage () {
     return (
         <>
         <PageHeader title = "Create A Love Bomb"></PageHeader>
+        <div className="page-wrapper">
         <div className = "content-card">
-            <div className="hero-text">
-            Here at Self Love Bombs we believe you are the author of your own narration. You get to decide how you talk to yourself. Here is an opportunity to practice speaking kindly to yourself.</div>
+            <p>
+            Here at Self Love Bombs we believe you are the author of your own narrative. You get to decide how you talk to you. Here is an opportunity to practice speaking kindly to yourself. No pressure - whatever feels true.
+            </p>
             <CYOForm />
             <LoveBombGrid />
+            </div>
         </div>
         </>
     )
 
 }
-
-
 export default CreateYourOwnPage

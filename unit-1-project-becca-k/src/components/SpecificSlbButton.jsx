@@ -16,15 +16,27 @@ function SpecificSlbButton ({category}) {
 
     else (setMessage(filteredArray[randomIndex].message));
   }
+    const handlePlay = () => {
+    if (!message) return;
+    
+    // Stop any current speech before starting new
+    window.speechSynthesis.cancel();
+    
+    const utterance = new SpeechSynthesisUtterance(message);
+    window.speechSynthesis.speak(utterance);
+  };
+
 
     return (
     <>
-    <div className="button-container">
-      <button className = "button3" onClick={handleClick}>
-        Click for a Self Love Bomb
+      <button className = "bomb-button" onClick={handleClick}>
       </button>
-      </div>
-      <h3>{message}</h3>
+      <h4>{message}</h4>
+        {message && (
+        <button className= "button2" onClick={handlePlay}>
+          ▶        </button>
+      )}
+
     </>
 
       );

@@ -1,10 +1,8 @@
 import { Link} from "react-router-dom";
 import SelfLoveBombWithTextImage from "./SelfLoveBombWithTextImage.jsx";
-import React from "react";
 
 const NavBar = () => {
   return (
-    <>  
     <nav>
     <div className = "navbar">
       <img src={SelfLoveBombWithTextImage} alt="Self Love Bombs logo" />
@@ -17,10 +15,7 @@ const NavBar = () => {
       </ul>
     </div>   
     </nav>
-    </>
- 
   );
 };
 
 export default NavBar;
-  

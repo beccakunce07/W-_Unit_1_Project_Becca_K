@@ -10,7 +10,7 @@ const ContactUsForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Message sent successfully!');
+    alert('Thanks for Contacting Us!');
     setShowForm(false); // Optional: hide form after submission
   };
 

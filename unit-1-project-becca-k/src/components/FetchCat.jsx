@@ -23,29 +23,26 @@ const CatPic = () => {
   }, []);
 
   return (
-    <div style={{ textAlign: 'right', marginTop: '50px' }}>
-      <h3>For the cat lovers</h3>
-      
-      <div style={{ minHeight: '350px', marginBottom: '20px' }}>
+    <div style={{ textAlign: 'right', marginTop: '10px' }}>
+      <h3>For the cat lovers 🐈‍⬛</h3>
+      <div>
         {loading ? (
           <p>Finding a kitty...</p>
         ) : (
-          catImage && <img    src={catImage}
-            alt="A sweetie angel baby kitty"
+          catImage && <img src={catImage}
+            alt="A sweetie angel kitty"
             style={{
-                maxWidth: '300px',
-                borderRadius: '10px',
-                display: 'block',    
-                marginLeft: 'auto'  
-    }}
-  />
+              maxWidth: '300px', 
+              borderRadius: '11px', 
+              marginLeft: 'auto', 
+              padding: 'auto', 
+              border: '2px solid var(--dark-green)'
+    }}/>
 )} 
       </div>
-
       <button className = 'button1'
         onClick={fetchCat} 
         disabled={loading}
-        style={{ padding: 'auto', fontSize: '16px', cursor: 'pointer' }}
       >
         {loading ? "Loading..." : "Pssp Pssp"}
       </button>
