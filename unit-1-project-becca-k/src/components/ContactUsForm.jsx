@@ -20,13 +20,13 @@ const ContactUsForm = () => {
   return (
     <>
       <button className = 'button1' onClick={() => setShowForm(true)}> 
-        Click Here to Contact Us
+        ⟢ Contact Us ⟢
       </button>
 
       {showForm && (
         <div className="contact-container">
           <div className="contact-card">
-            <h2>Contact Us</h2>
+            <h2>Contact U</h2>
             <p>We'd love to hear how we can improve. Please leave us a message below.</p>
             <form onSubmit={handleSubmit}>
               <div className="form-group">

@@ -5,20 +5,17 @@ import ContactUsForm from './ContactUsForm.jsx';
 function PageFooter() {
     return (
         <footer>
-                {/* <div className="footer-container"> */}
-                    
-                    <div><Link to="https://www.linkedin.com/in/becca-kunce-a0013255/">|| Hire Me ||</Link></div>
-
-                    <a href="mailto:rebeccakunce@gmail.com">|| Email Me ||</a>
+                    <div><Link to="https://www.linkedin.com/in/becca-kunce-a0013255/">⟢ Hire Me ⟢ </Link></div>
+                    <a href="mailto:rebeccakunce@gmail.com">⟢ Email Me ⟢ </a>
+                    <div>
                     <p>
-                        || &copy; 2026 Becca Kunce. All Rights Reserved ||
+                    <i>⟢ ⟢ Because love only takes a spark.⟢ ⟢ </i><br></br>
+                    ⟢  &copy; 2026 Becca Kunce. All Rights Reserved ⟢ 
                     </p>
-                    
+                    </div>
                 <ContactUsForm/>
         </footer>
     )
 }
 
 export default PageFooter;
-
-

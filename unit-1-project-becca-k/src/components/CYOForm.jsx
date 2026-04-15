@@ -33,7 +33,7 @@ function CYOForm() {
   return (
     <div> {/* button to show or close form. using logic */}
       <button className='button1' onClick={() => setShowForm(!showForm)}>
-        {showForm ? "Close Form" : "Let's Create Our Own"}
+        {showForm ? "Close Form" : "⟢Let's Create⟢"}
       </button>
  
       {showForm && ( 

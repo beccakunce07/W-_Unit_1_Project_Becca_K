@@ -26,23 +26,31 @@
   align-items: center;
   background-color: #ECF6E8;
   border-radius: 11px;
-  align-self: stretch;
+  /* align-self: stretch; */
   /* Adjusted padding for mobile */
-  padding: 1.5rem 1rem; 
+  padding: 1.5rem 1rem 1.5rem 1rem; 
   box-sizing: border-box;
 }
 
 /* The Main Container Card */
 .content-card {
+  box-sizing: border-box; /* Includes border in the 80% width */
   background-color: rgba(17, 178, 124, 0.3);
   border: 1.3px double var(--gold);
   border-radius: 11px;
-  padding: 1.3rem;
-  width: 95%; 
-  max-width: 800px;
+  max-width: 80%;
   margin: 0 auto;
-  justify-content: center;
-  align-items: center;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  overflow-wrap: break-word; 
+  padding: 1rem;
+  img{
+    max-width: 100%; 
+    width: 300px;    
+    height: auto; 
+    display: block; 
+  }
 }
 
 header {
@@ -86,14 +94,14 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
   border-top: 4px double var(--gold);
   padding: 1rem;
   border-radius: var(--radius);
   margin: 0;
-  width: auto;
+  max-width: 100%;
   align-self: stretch;
-
   p {
     margin: 0 0;
   }
@@ -271,13 +279,11 @@ a {
   box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
 }
 
-
-
 /*Buttons*/
 .start-button {
-  background-color: #D50000;
+  background-color: var(--gold);
   color: #ECF6E8;
-  border: none;
+  
   padding: 12px 30px;
   border-radius: 50px;
   cursor: pointer;
@@ -286,37 +292,41 @@ a {
 
 .start-button:hover {
   transform: scale(1.05);
-  background-color: #CD8D2B;
+  background-color: var(--red);
 }
 
 a:hover { text-decoration: underline; opacity: 0.8; }
 
 .bomb-button {
-  min-height: 3rem;
-  min-width: 5rem;
-  border-radius: 50px;
-  border: 1px, solid, var(--red);
-  background-image: url('/Users/beccakunce/Desktop/LaunchCode/Coursework/GitHubs/W-_Unit_1_Project_Becca_K/unit-1-project-becca-k/src/assets/SelfLoveBombImage.png'); /* Ensure path is correct */
-  background-size: cover;                
-  background-position: center;          
-  background-repeat: no-repeat;  
-  background-color: #CD8D2B;
-  padding: 12px 30px;
+  width: 10rem;
+  height: 6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px; 
+  background-image: url('./assets/SelfLoveBombImage.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(22, 46, 35, 0.8);
+  border-radius: 3rem;
+  border: .1rem solid var(--gold); /* Removed commas; standard syntax is space-separated */
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.2s ease;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
 }
 
 .bomb-button:hover {
   transform: scale(1.05);
   background-color: #CD8D2B;
-  border: none;
 }
 
 .button1, .button2, .button3 {
   padding: 12px 24px;
   cursor: pointer;
-  border: 1px double var(--red);
+  border: .1rem solid #162e23;
   border-radius: 50px; 
   transition: all 0.3s ease;
   justify-content: center;
@@ -407,9 +417,10 @@ a:hover { text-decoration: underline; opacity: 0.8; }
   align-items: center;
   gap: 15px;
   position: relative; 
-  padding: 1rem 0;
+  padding: .5rem 0;
   flex-wrap: wrap;
   justify-content: center;
+  width: fit-content;
 }
 
 /* media formatting for mobile devices. smaller max width. adjusts the main containers and abjects */

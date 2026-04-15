@@ -23,11 +23,8 @@ const DogPic = () => {
   }, []);
 
   return (
-    <div style={{ textAlign: 'left', justifyContent: 'left', marginTop: '10px' }}>
-      <h2
-      style ={{
-        justifyContent: 'left'
-      }}>🐕 For the dog lovers</h2>
+    <div style={{ textAlign: 'left', justifyContent: 'left', marginTop: '10px', maxWidth: '100%' }}>
+      <h2>🐕 For the dog lovers</h2>
       <div >
         {loading ? (
           <p>Finding a good boy...</p>
@@ -35,12 +32,13 @@ const DogPic = () => {
           dogImage && <img src={dogImage}
           alt="A sweetie angel muffin dog"
           style={{ 
-            maxwidth: '300px', 
-            maxWidth: '300px', 
-            borderRadius: '11px', 
-            marginRight: 'auto', 
-            padding: 'auto', 
-            border: '2px solid var(--dark-green)'
+              display: 'flex',
+              justifyContent: 'flex-start', // Aligns items to the left
+              flexDirection: 'column',      // Or 'row'maxWidth: '100%', 
+              maxWidth: '100%',
+              maxHeight: '200px',
+              borderRadius: '11px',  
+              border: '2px solid var(--dark-green)'
             }} />
         )}
       </div>
@@ -49,7 +47,7 @@ const DogPic = () => {
         onClick={fetchDog} 
         disabled={loading}
       >
-        {loading ? "Loading..." : "Another Sweet Angel"}
+        {loading ? "Loading..." : "⟢Another Sweet Angel⟢"}
       </button>
     </div>
   );

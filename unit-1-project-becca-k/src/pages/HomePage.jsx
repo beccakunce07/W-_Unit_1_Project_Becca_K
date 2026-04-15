@@ -15,16 +15,12 @@ function HomePage() {
     <PageHeader title="Welcome Home" />
     <div className="page-wrapper">
       <div className="content-card">
-        <div className="hero-logo-container">
-          <img src={SelfLoveBombWithTextImage} alt="Self Love Bombs logo" className="hero-logo" />
-        </div>
-        
-        <h1 className="hero-text">
+          <img src={SelfLoveBombWithTextImage} alt="Self Love Bombs logo"/>
+        <h1>
           An app designed to help you fall in love with you, one love bomb at a time. 
         </h1>
-
         <button className="start-button" onClick={handleClick}>
-          Bombs Away
+          ⟢Bombs Away⟢
         </button>
       </div>
     </div>

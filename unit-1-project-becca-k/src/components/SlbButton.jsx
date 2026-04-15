@@ -27,7 +27,6 @@ function SlbButton() {
     <>
          {/* <h3>Click here for a love bomb</h3>  */}
         <button className = "bomb-button" onClick={handleClick}>
-          Love Bomb Me
         </button>
       
       {/* Playback Button - only shows if there is a message */}

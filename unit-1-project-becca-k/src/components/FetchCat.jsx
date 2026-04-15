@@ -32,10 +32,9 @@ const CatPic = () => {
           catImage && <img src={catImage}
             alt="A sweetie angel kitty"
             style={{
-              maxWidth: '300px', 
-              borderRadius: '11px', 
-              marginLeft: 'auto', 
-              padding: 'auto', 
+              maxWidth: '100%', 
+              maxHeight: '200px',
+              borderRadius: '11px',  
               border: '2px solid var(--dark-green)'
     }}/>
 )} 
@@ -44,7 +43,7 @@ const CatPic = () => {
         onClick={fetchCat} 
         disabled={loading}
       >
-        {loading ? "Loading..." : "Pssp Pssp"}
+        {loading ? "Loading..." : "⟢Pssp Pssp⟢"}
       </button>
     </div>
   );
