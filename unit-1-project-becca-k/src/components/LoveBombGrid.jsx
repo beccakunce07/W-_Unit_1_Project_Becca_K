@@ -26,7 +26,7 @@ function StopIcon() {
         </svg>
     );
 }
-
+//function LoveBombCar takes inthe bomb message, what voice they chose, the start and the stop button as parameters
 function LoveBombCard({bomb, speakingId, onSpeak, onStop}) {
     const colors = categoryColors[bomb.key] || categoryColors["finances"];
     const isSpeaking = speakingId === bomb.id;

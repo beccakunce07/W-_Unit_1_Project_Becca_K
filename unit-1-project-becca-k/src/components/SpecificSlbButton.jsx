@@ -25,8 +25,6 @@ function SpecificSlbButton ({category}) {
     const utterance = new SpeechSynthesisUtterance(message);
     window.speechSynthesis.speak(utterance);
   };
-
-
     return (
     <>
       <button className = "bomb-button" onClick={handleClick}>
@@ -38,9 +36,6 @@ function SpecificSlbButton ({category}) {
       )}
 
     </>
-
       );
-    
 };
-
 export default SpecificSlbButton;

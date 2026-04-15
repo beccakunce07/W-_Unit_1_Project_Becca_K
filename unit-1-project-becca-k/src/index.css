@@ -8,31 +8,41 @@
 }
 
 .app-wrapper {
-    flex-direction: column;
-    min-height: min-content;
-    min-width: min-content;
-    display: flex;
-    border: 9px double var(--dark-green);
-    border-radius: 11px;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    margin:3rem;
-    padding: 3rem;
+  flex-direction: column;
+  display: flex;
+  border: 9px double var(--dark-green);
+  border-radius: 11px;
+  /* Use percentage or smaller padding for mobile */
+  margin: 1rem; 
+  padding: 1rem;
+  /* Remove min-width so it can shrink */
+  min-width: 0; 
 }
+
 .page-wrapper {
-  min-height: min-content;
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: #ECF6E8;
-  border: 2px, var(--radius);
   border-radius: 11px;
   align-self: stretch;
-  margin: 0;
-  padding: 3rem;
+  /* Adjusted padding for mobile */
+  padding: 1.5rem 1rem; 
+  box-sizing: border-box;
+}
+
+/* The Main Container Card */
+.content-card {
+  background-color: rgba(17, 178, 124, 0.3);
+  border: 1.3px double var(--gold);
+  border-radius: 11px;
+  padding: 1.3rem;
+  width: 95%; 
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -40,16 +50,19 @@ header {
   padding: 0px;
   width: auto;
   margin: 0;
+  img {
+    display: block;  
+    margin: 0 auto;   
+    height: auto;
+    max-width: 200px;
+    border-radius: 50%;
+    }
 }
 
-
 .header h1 {
-  color:#ECF6E8;
-  font-size: 63px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
-  padding: 0;
-  margin: 0;
+  color: #ECF6E8;
+  font-size: clamp(2rem, 8vw, 63px); 
+  text-align: center;
 }
 
 .header-inset {
@@ -258,18 +271,7 @@ a {
   box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
 }
 
-/* The Main Container Card */
-.content-card {
-  background-color: rgba(17, 178, 124, 0.3); 
-  border: 1.3px double var(--gold);
-  border-radius: 11px;
-  padding: 1.3rem;
-  max-width: 80%;
-  text-align: center;
-  align-items:center;
-  display: block;
-  justify-content: center;
-}
+
 
 /*Buttons*/
 .start-button {
@@ -396,40 +398,45 @@ a:hover { text-decoration: underline; opacity: 0.8; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  max-width: fit-content;
-  height:auto;
   width: 100%;
-  white-space: nowrap;
-  flex-wrap: wrap-reverse;
-  
-}
-
-.navbar img {
-  height: 350px;
-  max-width: fit-content;
-  margin-top: -120px;
-  border-radius: 50%;
 }
 
 .navbar ul {
   display: flex;
   list-style: none;
   align-items: center;
-  gap: 20px;
-  padding: 80px 0 0;
-  font-size: 1rem;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap: 15px;
+  position: relative; 
+  padding: 1rem 0;
+  flex-wrap: wrap;
   justify-content: center;
-  position: absolute;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 100%;
-  box-sizing: border-box;
- 
-    /* left: 50%; */
-  /* transform: translateX(-50%); */
- 
-  /* max-width: 80%; */
+}
+
+/* media formatting for mobile devices. smaller max width. adjusts the main containers and abjects */
+@media (max-width: 600px) {
+  .app-wrapper {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-width: 4px; 
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem !important; 
+    text-align: center !important;
+  }
+
+  .button-container {
+    flex-direction: column; 
+    width: 100%;
+  }
+
+  .button1, .button2, .button3 {
+    width: 100%; 
+    margin: 5px 0;
+  }
+  
+  .hero-logo {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }

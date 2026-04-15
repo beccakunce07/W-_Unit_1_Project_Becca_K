@@ -1,3 +1,3 @@
-import SelfLoveBombWithTextImage from '../assets/SelfLoveBombWithTextImage.png';
+import SelfLoveBombWithTextImage from '../assets/SelfLoveBombWithTextImage.png'
 
 export default SelfLoveBombWithTextImage;

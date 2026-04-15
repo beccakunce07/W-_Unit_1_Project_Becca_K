@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 
+
 const ContactUsForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [showForm, setShowForm] = useState(false);
 
+  //const to handle the change on the form - to set the name and value 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -11,11 +13,10 @@ const ContactUsForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert('Thanks for Contacting Us!');
-    setShowForm(false); // Optional: hide form after submission
+    setShowForm(false); ///hiding after submission
   };
 
-  //using onClick to set the form show to true. 
-
+//using onClick to set the form show to true. && operator to only show form when showForm is true
   return (
     <>
       <button className = 'button1' onClick={() => setShowForm(true)}> 

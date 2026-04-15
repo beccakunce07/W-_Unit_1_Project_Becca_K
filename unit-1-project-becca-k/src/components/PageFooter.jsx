@@ -7,11 +7,11 @@ function PageFooter() {
         <footer>
                 {/* <div className="footer-container"> */}
                     
-                    <div><Link to="https://www.linkedin.com/in/becca-kunce-a0013255/"> Connect On LinkedIn ||</Link></div>
+                    <div><Link to="https://www.linkedin.com/in/becca-kunce-a0013255/">|| Hire Me ||</Link></div>
 
                     <a href="mailto:rebeccakunce@gmail.com">|| Email Me ||</a>
                     <p>
-                        ゜゜ &copy; 2026 Becca Kunce. All Rights Reserved ||
+                        || &copy; 2026 Becca Kunce. All Rights Reserved ||
                     </p>
                     
                 <ContactUsForm/>
