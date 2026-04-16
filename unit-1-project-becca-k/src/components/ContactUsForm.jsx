@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 
 const ContactUsForm = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' }); 
   const [showForm, setShowForm] = useState(false);
 
   //const to handle the change on the form - to set the name and value 
