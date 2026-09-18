@@ -58,12 +58,15 @@ function CYOForm() {
             <option value="Something Else">something else</option>
           </select>
           </div>
+          <input type="hidden" id="submissionTime" name="submissionTime"></input>
 
           <button className="button1" type="submit">
             {editId ? "Update Bank" : "Add to Bank"}
           </button>
         </form>
+        
       )}
+      
       <ul>
         {messageList.map((item) => (
           <ul key={item.id}>
@@ -73,7 +76,10 @@ function CYOForm() {
           </ul>
         ))}
       </ul>
+      
     </div> 
+
+    
   ); 
 }
 
